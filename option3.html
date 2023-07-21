@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Option 3</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #E7C146;
+      color: #000000;
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #greenify-logo {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      padding: 20px;
+      cursor: pointer;
+      color: #007f47; 
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      background-color: #E7C146;
+      z-index: 999;
+    }
+
+    .options-container {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .option {
+      background-color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      width: 100%; 
+      margin-bottom: 10px; 
+      border-radius: 25px; 
+      overflow: hidden; 
+      background-image: url('img1.jpg'); 
+      background-size: cover; 
+      background-repeat: no-repeat; 
+    }
+
+    .option-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 30px; 
+    }
+
+    .option-description {
+      font-size: 16px;
+    }
+
+    .option:hover {
+      transform: scale(1.05);
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #007f47; 
+      color: #FFFFFF; 
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none; 
+    }
+
+    .button:hover {
+      background-color: #005e36; 
+    }
+  </style>
+</head>
+<body>
+  <div id="greenify-logo">
+    Greenify
+  </div>
+
+  <main>
+    <section class="options-container">
+      <div class="option">
+        <h3 class="option-title">Carbon Footprint Calculator</h3>
+        <p class="option-description">Calculate your carbon footprint using the Carbon Calculator website.</p>
+        <div class="button-container">
+          <a href="https://michaelbluejay.com/electricity/carboncalculator.html" target="_blank" class="button">Go there now!</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenify - Get Started</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+ 
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #E7C146;
+      color: #000000;
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #greenify-logo {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      padding: 20px;
+      cursor: pointer;
+      color: #007f47; 
+      text-decoration: none;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      background-color: #E7C146;
+      z-index: 999;
+    }
+
+    .options-container {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .option {
+      background-color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      width: 100%; 
+      margin-bottom: 10px; 
+      border-radius: 25px; 
+      overflow: hidden; 
+      background-image: url('img1.jpg'); 
+      background-size: cover; 
+      background-repeat: no-repeat; 
+    }
+
+    .option-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 30px; 
+    }
+
+    .option-description {
+      font-size: 16px;
+    }
+
+    .option:hover {
+      transform: scale(1.05);
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #007f47; 
+      color: #FFFFFF; 
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none; 
+    }
+
+    .button:hover {
+      background-color: #005e36; 
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" id="greenify-logo">
+    Greenify
+  </a>
+
+  <main>
+    <section class="options-container">
+      <div class="option">
+        <h3 class="option-title">10 Practical Ways to Make Your Life More Eco-Friendly</h3>
+        <p class="option-description">Find 10 ways that you can make your life more eco-friendly. With simple changes to your daily habits, you can make a positive impact on the environment and reduce waste.</p>
+        <div class="button-container">
+          <a href="option1.html" class="button">Read Article</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="options-container">
+      <div class="option">
+        <h3 class="option-title">8 Easy Steps to Embrace an Eco-Friendly Lifestyle</h3>
+        <p class="option-description">Find ways to reduce waste. Living a more eco-friendly lifestyle doesn't have to be complicated. With simple changes to your daily habits, you can make a positive impact on the environment and reduce waste.</p>
+        <div class="button-container">
+          <a href="option2.html" class="button">Read Article</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="options-container">
+      <div class="option">
+        <h3 class="option-title">Carbon Footprint Calculator</h3>
+        <p class="option-description">Calculate your carbon footprint using the Carbon Calculator website.</p>
+        <div class="button-container">
+          <a href="https://michaelbluejay.com/electricity/carboncalculator.html" class="button">Go there now!</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

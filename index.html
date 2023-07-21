@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenify</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #E7C146;
+      color: #000000;
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #greenify-logo {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      padding: 20px;
+      cursor: pointer;
+      color: #007f47;
+      text-decoration: none;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      background-color: #E7C146;
+      z-index: 999;
+    }
+
+    #hero {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #E7C146;
+      position: relative;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    #scroll-section-1 {
+      padding: 100vh 20px;
+      background-color: transparent;
+      border: none;
+    }
+
+    .scroll-content {
+      color: #000000;
+      text-align: center;
+    }
+
+    .scroll-heading {
+      color: #007f47;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .scroll-description {
+      font-size: 20px;
+    }
+
+    .button-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #007f47;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #005e36;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" id="greenify-logo">
+    Greenify
+  </a>
+
+
+  <main>
+    <section id="hero">
+      <h1>Take the Correct Steps for the Future You</h1>
+    </section>
+
+    <section id="scroll-section-2">
+      <div class="scroll-content">
+        <h2 class="scroll-heading">Who is this for?</h2>
+        <p class="scroll-description">Our platform is designed for environmentally conscious individuals, communities, and organizations who want to take active steps towards a greener and more sustainable future. Whether you are a homeowner looking to install solar panels, a business striving to reduce its carbon footprint, or an eco-conscious individual seeking tips on living a sustainable lifestyle, Greenify is here to support and guide you on your journey.</p>
+        <div class="button-container">
+          <a href="new-page.html" class="button">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="scroll-section-1">
+      <div class="scroll-content">
+        <h2 class="scroll-heading">Our Mission</h2>
+        <p class="scroll-description">At Greenify, our mission is to empower individuals and communities to create a sustainable future by promoting renewable energy, reducing waste, conserving natural resources, and protecting ecosystems. We believe that every action counts and that together we can make a significant impact on the health of our planet.</p>
+        <div class="button-container">
+          <a href="new-page.html" class="button">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="animations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var scrollTrigger = 400; 
+
+      var heroSection = document.getElementById('hero');
+      var mainText = heroSection.querySelector('h1');
+
+      mainText.style.opacity = '0';
+      mainText.style.transform = 'translateY(50px)';
+
+      var checkVisibility = function() {
+        var rect = heroSection.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+          mainText.style.opacity = '1';
+          mainText.style.transform = 'translateY(0)';
+        }
+      };
+
+      checkVisibility(); 
+
+      window.addEventListener('scroll', checkVisibility);
+    });
+  </script>
+</body>
+</html>

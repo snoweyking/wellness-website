@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #E7C146;
+  color: #000000;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+#greenify-logo {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #E7C146;
+  z-index: 999;
+}
+
+#hero {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #E7C146;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#scroll-section {
+  padding: 100vh 20px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+.scroll-content {
+  color: #000000;
+  text-align: center;
+}
+
+.scroll-heading {
+  color: #007f47;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.scroll-description {
+  font-size: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button {
+  background-color: #007f47;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #005e36;
+}
+
+#scroll-section-2 {
+  padding: 30vh 10px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+#scroll-section-2 .scroll-content {
+  color: #000000;
+}
+
+#scroll-section-2 .scroll-heading {
+  color: #007f47;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#scroll-section-2 .scroll-description {
+  font-size: 20px;
+}
+
+#scroll-section-2 .button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#scroll-section-2 .button {
+  background-color: #007f47;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#scroll-section-2 .button:hover {
+  background-color: #005e36;
+}
